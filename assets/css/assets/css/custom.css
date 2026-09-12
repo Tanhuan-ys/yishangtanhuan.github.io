@@ -1,0 +1,24 @@
+/* 自动流动彩虹背景 */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 内容区域半透明白底，保证文字看得清楚 */
+main > .content {
+  background:rgba(255,255,255,0.86);
+  border-radius:16px;
+}
